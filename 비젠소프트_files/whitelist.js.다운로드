@@ -1,0 +1,28 @@
+//화이트 리스트 목록 (abc 순서)
+var whiteList = [
+                 "/ajax/getMsg.jsp",
+                 "/include/boardConfig/process_file.jsp",
+                 "/include/sms/smsSendAjax.jsp",
+                 "/member/id_check.jsp",
+                 "addDeptManage.jsp",
+                 "changeDeptUpdate.jsp",
+                 "filePop.jsp",
+                 "indexJquery.jsp",
+                 "membersearch.jsp",
+                 "readDeptManage.jsp",
+                 "removeDeptManage.jsp",
+                 "updtDeptManage.jsp",
+                 "sendJquery.jsp"
+                 ];
+
+function verif (userInput) {
+
+	if (whiteList.includes(userInput)) {
+		
+		return true;
+		
+	} else {
+		alert("이동할 수 없습니다.");
+		return false;
+	}
+}
